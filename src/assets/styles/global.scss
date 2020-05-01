@@ -1,0 +1,14 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fafafa;
+    font: small-caps calc(14px + .5vw) "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 10px auto;
+}
