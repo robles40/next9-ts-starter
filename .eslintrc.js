@@ -4,6 +4,7 @@ module.exports = {
   plugins: [
     'prettier',
     '@typescript-eslint',
+    'jest'
   ],
   extends: [
     'eslint:recommended',
@@ -11,7 +12,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
     'plugin:react/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:jest/recommended'
   ],
   globals: {
     "React": "writable"
@@ -31,5 +33,10 @@ module.exports = {
     react: {
       version: "detect"
     }
+  },
+  env: {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
   }
 };
